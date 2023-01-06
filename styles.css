@@ -227,3 +227,14 @@ color: #9DA4BD;
     color: #9DA4BD;
     text-decoration-line: underline;
 }
+.working-hrs{
+    color:var(--main-color-lighondark);
+}
+.working-hrs-num{
+    color: #9DA4BD;
+}
+/* <!--------------------------------------------Footer-------------------------------> */
+.p1footer{
+    letter-spacing: 0.2em;
+    color: #9DA4BD;     
+}
