@@ -1,0 +1,229 @@
+:root{
+    --main-color-headers:#303030;
+    --main-color-active:#FF6C00;
+    --main-color-lighondark:#FFFFFF;
+}
+body{
+    background-color: #FFFFFF;
+    color:#555555;
+    font-family: "Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+/*-------------------- Comon fonts---------------------------- */
+.temporarybg{
+    background-color:#303030 ;
+}
+.maintext{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;    
+    letter-spacing: 0.02em;
+}
+.h2text{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+}
+
+.verysmalltext{
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+}
+.button{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    border-radius: 25px;
+    letter-spacing: 0.09em;
+    border: 1px solid #FF6C00;
+    text-transform: uppercase;
+}
+/*--------------------Removing dots from the li----------------------------*/
+.list{
+    list-style: none;
+}
+/*-------------------Removing underline from the links---------------------*/
+.underline{
+    text-decoration: none;
+}
+/*---------------------Invisible text-------------------------------------*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/*--------------------------Header---------------------------------------*/
+.headertext{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    }
+.header-text-color{
+    color: var(--main-color-lighondark);
+        }
+.header-text-color:hover{
+    color:var(--main-color-active);
+}
+.header-text-color:focus{
+    color: var(--main-color-active);
+}
+
+/* temporary color for the header */
+.headrbg{
+    background-color: #303030;;
+}
+.header-contacts{
+    color: var(--main-color-lighondark);
+    text-transform: uppercase;
+    font-style: normal;    
+}
+.header-contacts:hover{
+color:var(--main-color-active);
+}
+.header-contacts:focus{
+color:var(--main-color-active);  
+}
+.dark-button{
+color:var(--main-color-lighondark);
+background-color: var(--main-color-headers);
+cursor: pointer;
+}
+.dark-button:hover{
+    color:var(--main-color-lighondark);
+    background-color: var(--main-color-active);
+}
+.dark-button:focus{
+    color:var(--main-color-lighondark);
+    background-color: var(--main-color-active);
+}
+/*--------------------------------Main section-------------------------------*/
+/*--------------------------------Hero--------------------------------------*/
+.social-links{
+    color:var(--main-color-headers);
+    letter-spacing: 0.2em;
+}
+.social-links:hover{
+    color:var(--main-color-active);
+}
+.social-links:focus{
+    color:var(--main-color-active);
+}
+.pherosection{
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+.h1{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 85px;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+.maintext-light-ondark{
+    color:#9DA4BD;
+}
+.back-fwd{
+letter-spacing: 0.1em;
+color: rgba(157, 164, 189, 0.6);
+}
+.fwd-back{
+text-align: right;
+letter-spacing: 0.1em;    
+color: #FFFFFF;    
+}
+/*---------------------------------------About--------------------------------------------*/
+.p1about{
+text-transform: uppercase;
+color: var(--main-color-headers);
+}
+.h2dark{
+    color: var(--main-color-headers);
+}
+.p3about{
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+}
+.light-button{
+    color:var(--main-color-headers);
+    background-color: #FFFFFF;
+}
+.light-button:hover{
+    color: #FFFFFF;
+    background-color: var(--main-color-active);
+}
+.light-button:focus{
+    color: #FFFFFF;
+    background-color: var(--main-color-active);
+}
+/* <!---------------------- Services and Prices ----------------------> */
+.h2light{
+    color: #FFFFFF;
+}
+/* <!------------------------- Old Traditional School----------------------------> */
+.numbers{
+font-weight: 700;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+letter-spacing: 0.05em;
+color:var(--main-color-headers)
+}
+.under-number-text{
+    /* text-align: center;  tool out maybe in future put back*/
+    color: var(--main-color-headers);
+}
+/* <!------------------------------------The Team-----------------------------> */
+.team-name-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    /* text-align: center; */
+    letter-spacing: 0.02em;    
+    color: var(--main-color-headers);    
+}
+.p1team{
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* text-align: center; */
+letter-spacing: 0.02em;
+color: #FF6C00;
+}
+/* <!-------------------------------------Work--------------------------> */
+/* <!----------------------------------OnlineBooking-------------------> */
+/* <!-----------------------------------Contacts-----------------------> */
+.contacts-address{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.67x;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+.contacts-tel{
+    color: #9DA4BD;
+}
+.contact-email{
+    color: #9DA4BD;
+    text-decoration-line: underline;
+}
