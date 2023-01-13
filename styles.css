@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 :root{
     --main-color-headers:#303030;
     --main-color-active:#FF6C00;
@@ -11,6 +14,26 @@ body{
     font-weight: 400;
     font-size: 18px;
 }
+/*----------Resetting all margins and paddings to 0-*/
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+ul{
+    margin:0;
+    padding-left: 0;
+}
+img{
+    display: block;
+    }
+    .container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;   
+    margin-left: auto;
+    margin-right: auto; 
+    outline: 2px solid red;    
+    }
 /*-------------------- Comon fonts---------------------------- */
 .temporarybg{
     background-color:#303030 ;
@@ -37,7 +60,8 @@ font-size: 11px;
 line-height: 1.36;
 }
 .button{
-    font-family: 'Open Sans';
+    font-family: inherit;
+    /* font-family: 'Open Sans'; */
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -46,7 +70,11 @@ line-height: 1.36;
     letter-spacing: 0.09em;
     border: 1px solid #FF6C00;
     text-transform: uppercase;
-}
+    max-width: 160px;
+    height: 40px;
+    cursor: pointer;
+    color:transparent;
+    }
 /*--------------------Removing dots from the li----------------------------*/
 .list{
     list-style: none;
@@ -84,10 +112,27 @@ line-height: 1.36;
 .header-text-color:focus{
     color: var(--main-color-active);
 }
+.header-nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.header-contact-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 43px;   
+}
+.header-links-flex{
+padding-left: 130px;
 
+}
 /* temporary color for the header */
 .headrbg{
-    background-color: #303030;;
+    background-color: #a8a1a1;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .header-contacts{
     color: var(--main-color-lighondark);
@@ -102,8 +147,7 @@ color:var(--main-color-active);
 }
 .dark-button{
 color:var(--main-color-lighondark);
-background-color: var(--main-color-headers);
-cursor: pointer;
+
 }
 .dark-button:hover{
     color:var(--main-color-lighondark);
@@ -128,6 +172,21 @@ cursor: pointer;
 .pherosection{
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
+}
+
+
+.hero-flex{
+    padding-top: 184px;
+    padding-left: 100px;
+    margin-bottom:  144px;
+}
+.back-fwd-flex{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    gap: 24px;
 }
 .h1{
 font-family: 'Raleway';
@@ -137,6 +196,7 @@ font-size: 72px;
 line-height: 85px;
 letter-spacing: 0.05em;
 color: #FFFFFF;
+margin-bottom: 20px;
 }
 .maintext-light-ondark{
     color:#9DA4BD;
@@ -151,21 +211,46 @@ letter-spacing: 0.1em;
 color: #FFFFFF;    
 }
 /*---------------------------------------About--------------------------------------------*/
+.about-img-flex{
+    display: flex;
+    gap: 30px;
+}
+.about-flex{
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 30px;
+}
 .p1about{
 text-transform: uppercase;
 color: var(--main-color-headers);
+margin-bottom: 20px;
+
 }
 .h2dark{
     color: var(--main-color-headers);
+    margin-bottom: 20px;
+}
+.p2about{
+    margin-bottom: 20px;
 }
 .p3about{
 font-size: 14px;
 line-height: 1.86;
 letter-spacing: 0.02em;
+margin-bottom: 42px;
 }
 .light-button{
-    color:var(--main-color-headers);
-    background-color: #FFFFFF;
+    color:var(--main-color-headers);    
+}
+.about-online-flex{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    
+}
+.button-flex{
+   
 }
 .light-button:hover{
     color: #FFFFFF;
@@ -178,6 +263,22 @@ letter-spacing: 0.02em;
 /* <!---------------------- Services and Prices ----------------------> */
 .h2light{
     color: #FFFFFF;
+    margin-bottom: 74px;
+}
+.services-flex{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.services-content{
+display: flex;
+
+
+}
+.services-content-ins{
+    
+padding-left: 20px;
+justify-content: space-between;
+
 }
 /* <!------------------------- Old Traditional School----------------------------> */
 .numbers{
