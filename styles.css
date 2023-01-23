@@ -27,7 +27,7 @@ img{
     display: block;
     }
     .container{
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;   
     margin-left: auto;
@@ -59,6 +59,21 @@ font-weight: 600;
 font-size: 11px;
 line-height: 1.36;
 }
+
+.verysmalltext{
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+.verysmalltext::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color:currentColor;
+    
+}
+
 .button{
     font-family: inherit;
     /* font-family: 'Open Sans'; */
@@ -73,7 +88,7 @@ line-height: 1.36;
     max-width: 160px;
     height: 40px;
     cursor: pointer;
-    color:transparent;
+    background-color:transparent;
     }
 /*--------------------Removing dots from the li----------------------------*/
 .list{
@@ -97,6 +112,9 @@ line-height: 1.36;
     margin: -1px;
 }
 /*--------------------------Header---------------------------------------*/
+.logo{
+    margin-left: 10px;
+}
 .headertext{
     font-weight: 600;
     font-size: 12px;
@@ -125,14 +143,13 @@ line-height: 1.36;
     gap: 43px;   
 }
 .header-links-flex{
-padding-left: 130px;
+padding-left: 100px;
 
 }
 /* temporary color for the header */
 .headrbg{
     background-color: #a8a1a1;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 40px;    
 }
 .header-contacts{
     color: var(--main-color-lighondark);
@@ -159,10 +176,52 @@ color:var(--main-color-lighondark);
 }
 /*--------------------------------Main section-------------------------------*/
 /*--------------------------------Hero--------------------------------------*/
-.social-links{
-    color:var(--main-color-headers);
-    letter-spacing: 0.2em;
+.hero-img-slider{
+    background-color: #555555;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2),rgba(25, 28, 38, 0.2)),url(./img/Hero/Slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 184px;
+   
+    
 }
+
+.social-links{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;  
+    letter-spacing: 0.2em;
+    color:var(--main-color-headers);     
+}
+.hero-social-flex{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 58px;
+    margin-left: 30px;
+
+   
+}
+.hero-insta  {
+    display: flex;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    gap: 20px;    
+    text-align: right;   
+    align-items: center;
+
+
+}
+
+.hero-insta::before {    
+    content: "" ;
+    width: 1px;
+    height: 60px;
+    background-color:currentColor;
+    
+  
+   
+}
+
 .social-links:hover{
     color:var(--main-color-active);
 }
@@ -176,15 +235,26 @@ color:var(--main-color-lighondark);
 }
 
 
+
+
+.hero-main-flex{
+  display: flex;      
+}
+.hero-main-margin{
+    
+}
 .hero-flex{
-    padding-top: 184px;
+    
     padding-left: 100px;
-    margin-bottom:  144px;
+    padding-bottom: 40px;
+    flex-grow: 1;
+}
+.hero-central-flex{
+   margin-bottom: 144px; 
 }
 .back-fwd-flex{
     display: flex;
-    justify-content: end;
-    padding-bottom: 40px;
+    justify-content: end;    
     padding-right: 20px;
     gap: 24px;
 }
@@ -215,10 +285,12 @@ color: #FFFFFF;
     display: flex;
     gap: 30px;
 }
-.about-flex{
-    display: flex;
+.about-main-flex{
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 120px;  
+}
+.about-flex{
+    display: flex;    
     gap: 30px;
 }
 .p1about{
@@ -229,7 +301,7 @@ margin-bottom: 20px;
 }
 .h2dark{
     color: var(--main-color-headers);
-    margin-bottom: 20px;
+    margin-bottom: 44px;
 }
 .p2about{
     margin-bottom: 20px;
@@ -263,23 +335,41 @@ margin-bottom: 42px;
 /* <!---------------------- Services and Prices ----------------------> */
 .h2light{
     color: #FFFFFF;
-    margin-bottom: 74px;
-}
-.services-flex{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 44px;
 }
 .services-content{
-display: flex;
-
-
-}
-.services-content-ins{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px; 
+      
     
-padding-left: 20px;
+    
+    }
+    .service-img{
+        background-color: #111319;
+        background-image: url(./img/servpng.png);
+    }
+    
+.services-item-flex{
+display: flex;
 justify-content: space-between;
-
+margin-bottom : not(last-child)20px;
+    }
+.services-main-flex{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  
 }
+.services-list{
+    width: calc((100%-30)/2);
+    border: 1px solid #FFFFFF;
+    padding: 30px 20px;
+}
+.services-button{
+    margin-left: 510px;
+   
+}
+
 /* <!------------------------- Old Traditional School----------------------------> */
 .numbers{
 font-weight: 700;
@@ -287,20 +377,126 @@ font-size: 42px;
 line-height: 57px;
 text-align: center;
 letter-spacing: 0.05em;
-color:var(--main-color-headers)
+color:var(--main-color-headers);
+margin-bottom: 6px;
+
+
+}
+
+.numbers::after{
+    content: "+";
+    width: 13px;
+    height: 22px;
+    color: #FF6C00;  
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.37;
+text-align: center;
+
+
+    
+    
+
 }
 .under-number-text{
     /* text-align: center;  tool out maybe in future put back*/
     color: var(--main-color-headers);
+    
+    text-align: center;
 }
+.old-traditional{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.old-numbers-flex{
+    display: flex;    
+    flex-wrap: wrap; 
+    width: 370px;
+    flex-shrink: 0; 
+    }  
+.old-numbers-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36; 
+}    
+    
+
+    
+
+.old-number-letters{
+    text-align: center;
+    width: 170px;
+    height: 133px;
+    background-color: #F7F7F7;   
+    padding:20px 24px;  
+      
+}
+
+
+.old-number-letters:nth-child(odd){
+    margin-right: 30px;
+}
+.old-number-letters:nth-child(even){
+    margin-top: 30px;
+}
+
+
+.old-main-flex{
+    display: flex;
+    padding-left: 85px;
+    
+}
+.old-text-flex{
+    padding-top: 9px;
+    margin-left: 130px;    
+    max-width: 500px;
+    
+}
+
 /* <!------------------------------------The Team-----------------------------> */
+.team-main{
+    padding-bottom: 120px;
+    background: #F7F7F7;
+}
+.team-item-flex{
+    width: calc((100%-60px)/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    
+}
 .team-name-text{
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
-    /* text-align: center; */
     letter-spacing: 0.02em;    
-    color: var(--main-color-headers);    
+    color: var(--main-color-headers);   
+    margin-top: 30px;
+    margin-bottom: 8px; 
+}
+.team-social-main{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team-social-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--main-color-lighondark);
+    margin-top: 30px;
+    
+}
+.team-social-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
 .p1team{
 font-weight: 400;
@@ -310,8 +506,52 @@ line-height: 19px;
 letter-spacing: 0.02em;
 color: #FF6C00;
 }
+.team-flex{
+    display: flex;
+    gap: 30px;
+}
+.team-social-icon{
+    fill: #303030;
+}
+.team-social-icon:is(:hover,:focus){
+    fill: #FF6C00;
+}
+
+
 /* <!-------------------------------------Work--------------------------> */
+    .work-main{
+    padding-top: 120px;
+    padding-bottom: 120px;}
+    .work-flex{
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
 /* <!----------------------------------OnlineBooking-------------------> */
+.last-section-img{
+    background-color: #191C26;
+    background-image: url(./img/lastsectionbg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+}
+.last-section-main{
+   padding-top: 120px;
+   padding-bottom: 120px;
+   
+
+}
+.last-section{
+    display:flex;
+   
+}
+.online{
+    color: var(--main-color-lighondark);
+    
+
+}
+
 /* <!-----------------------------------Contacts-----------------------> */
 .contacts-address{
 font-style: normal;
@@ -320,22 +560,94 @@ font-size: 18px;
 line-height: 1.67x;
 letter-spacing: 0.02em;
 color: #9DA4BD;
+display: flex;
+align-items: center;
+
 }
+.contacts-last{
+   
+    margin-bottom: 70px;
+    
+    
+}
+.contact-items:not(:last-child){
+    margin-bottom:20px;}
+
+.h2light-contact{
+    color: var(--main-color-lighondark);
+    margin-bottom: 40px;
+}
+
 .contacts-tel{
     color: #9DA4BD;
+    display: flex;
+    align-items: center;
+    
 }
+
 .contact-email{
+    display: flex;
     color: #9DA4BD;
-    text-decoration-line: underline;
+    align-items:center;
+    text-decoration-line: underline ;
+    
 }
 .working-hrs{
     color:var(--main-color-lighondark);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
 }
+.working-hrs::before {
+    content: "";
+    width: 60px;
+    height: 1px;   
+    background-color: rgba(157, 164, 189, 0.4);
+}
+
+
+
 .working-hrs-num{
     color: #9DA4BD;
+    margin-top: 20px;
+
 }
+.section3-1{
+    width: calc(50% + 15px);
+}
+.section3-2{
+    width: calc(50% - 15px);
+    display: block;
+    
+}
+.contact-footer-icon{
+    
+   
+    margin-right: 16px;
+}
+
 /* <!--------------------------------------------Footer-------------------------------> */
 .p1footer{
     letter-spacing: 0.2em;
     color: #9DA4BD;     
 }
+
+.footer-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+.footer-social{
+    display: flex;
+    gap: 40px;
+    
+    
+}
+
+      
