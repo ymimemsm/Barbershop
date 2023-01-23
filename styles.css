@@ -284,6 +284,8 @@ color: #FFFFFF;
 .about-img-flex{
     display: flex;
     gap: 30px;
+    flex-grow: 1;
+
 }
 .about-main-flex{
     padding-top: 120px;
@@ -301,7 +303,7 @@ margin-bottom: 20px;
 }
 .h2dark{
     color: var(--main-color-headers);
-    margin-bottom: 44px;
+    margin-bottom: 20px;
 }
 .p2about{
     margin-bottom: 20px;
